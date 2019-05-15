@@ -117,7 +117,7 @@ for i = 1:length(caz)
     ca = caz(i);
     sa = saz(i);
     
-    [xxx,yyy]=linecirc(sa/ca,0,0,0,90-els(i));
+    [xxx,yyy]=linecircme(sa/ca,0,0,0,90-els(i));
     
     if (sa>=0) && (ca<=0)
         %1st Quadrant anticlockwise from North
@@ -192,7 +192,7 @@ blueGray = [103 219 244]/255;
 
 for i=1:n
     plot([mxm(i) mxp(i)], [mp_m(i) mp_p(i)], 'Color', blueGray, ...
-        'LineSmoothing','on', 'LineWidth', 1);
+        'LineWidth', 1);
     text(mx(i), my(i)+5, dates{i}, 'Color', blueGray, 'FontSize', 7);
 end
 

@@ -7,7 +7,7 @@ if (el > 0)
     ca = cosd(az - 270);
     sa = sind(az - 270);
     
-    [xxx,yyy]=linecirc(sa/ca,0,0,0,90-el);
+    [xxx,yyy]=linecircme(sa/ca,0,0,0,90-el);
     
     if (sa>=0) && (ca<=0)
         %1st Quadrant anticlockwise from North

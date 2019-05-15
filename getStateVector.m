@@ -22,6 +22,7 @@ utc = TimeScalesFactory.getUTC;
 
 % The Nasa feed
 if simulation_parameters.useSavedFile
+    fprintf('     Warning: using local saved file (may be old!)');
     nasaData = getNasaSavedFeed(simulation_parameters.savedFileName);
 else
     nasaData = getNasaActualFeed;
@@ -50,6 +51,7 @@ else
     position = Vector3D(temp.data.X, temp.data.Y, temp.data.Z);
     velocity = Vector3D(temp.data.XDot, temp.data.YDot, temp.data.ZDot);
     
+    fprintf('     Using state vector dated %s\n', char(initialDate));
 end
 
 end

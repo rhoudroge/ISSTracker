@@ -48,10 +48,10 @@ myDif = abs(az(2:end) - az(1:end-1));
 idx = [0,find(myDif > 100),length(az)];
 
 for k=2:length(idx)
-    handles.ISSTP(k-1) = plot(az(idx(k-1)+1:idx(k)), el(idx(k-1)+1:idx(k)), 'r','LineSmoothing','on');
+    handles.ISSTP(k-1) = plot(az(idx(k-1)+1:idx(k)), el(idx(k-1)+1:idx(k)), 'r');
 end
 
-handles.ISSSta = plot(az(id), el(id), 'y+', 'LineWidth', 2,'LineSmoothing','on');
+handles.ISSSta = plot(az(id), el(id), 'y+', 'LineWidth', 2);
 set(handles.TP, 'Color', 'k');
 
 axis([-180 180 -90 90]);

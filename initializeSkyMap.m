@@ -62,7 +62,7 @@ for i = 1:length(rs)
     r = rs(i);
     xs = r * ca;
     ys = r * sa;
-    plot(xs, ys,'Color',darkBlueGray,'LineSmoothing','on')
+    plot(xs, ys,'Color',darkBlueGray)
 end
 
 angs = [30 60 120 150 210 240 300 330];
@@ -75,7 +75,7 @@ for i = 1:length(angs)
     sa = sin(angs(i) * pi / 180);
     xs = [rmi * ca, rma * ca];
     ys = [rmi * sa, rma * sa];
-    plot(xs, ys,'Color',darkBlueGray,'LineSmoothing','on');
+    plot(xs, ys,'Color',darkBlueGray);
 end
 
 handles.star = zeros(length(sao), 1);
@@ -84,19 +84,19 @@ for i=1:length(sao)
 end
 
 % iss trajectory
-handles.ISSTrail1 = plot(0, 0, 'Color', blueGray, 'LineSmoothing','on',...
+handles.ISSTrail1 = plot(0, 0, 'Color', blueGray,...
     'LineWidth', 1.5, 'Visible', 'off');
-handles.ISSTrail2 = plot(0, 0, 'Color', blueGray, 'LineSmoothing','on',...
+handles.ISSTrail2 = plot(0, 0, 'Color', blueGray,...
     'LineWidth', 1.5, 'Visible', 'off');
-handles.ISSTrail3 = plot(0, 0, 'Color', blueGray, 'LineSmoothing','on',...
+handles.ISSTrail3 = plot(0, 0, 'Color', blueGray,...
     'LineWidth', 1.5, 'Visible', 'off');
-handles.ISSTrail4 = plot(0, 0, 'Color', blueGray, 'LineSmoothing','on',...
+handles.ISSTrail4 = plot(0, 0, 'Color', blueGray,...
     'LineWidth', 1.5, 'Visible', 'off');
-handles.ISSTrail5 = plot(0, 0, 'Color', blueGray, 'LineSmoothing','on',...
+handles.ISSTrail5 = plot(0, 0, 'Color', blueGray,...
     'LineWidth', 1.5, 'Visible', 'off');
 
 handles.ISSSky = plot(0, 0, 'Color', blueGray, 'Marker', '^', ...
-    'LineSmoothing', 'on', 'LineWidth', 1, 'Visible', 'off');
+    'LineWidth', 1, 'Visible', 'off');
 
 axis equal tight;
 axis off;

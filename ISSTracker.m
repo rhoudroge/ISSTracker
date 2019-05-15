@@ -163,7 +163,7 @@ fprintf('  Launching ISSTracker\n  ====================\n\n')
 if simulation_parameters.simulatedTime
     s = simulation_parameters.simulationStart;
     startDate = AbsoluteDate(DateComponents(s(1), s(2), s(3)),...
-        TimeComponents(s(4), s(5), s(6)), utc).toString;
+        TimeComponents(s(4), s(5), s(6)), utc);
     fprintf('   Using simulated time starting : %s\n', char(startDate));
     fprintf('                     speed fator : %f\n\n',...
         char(simulation_parameters.speedFactor));
@@ -353,9 +353,15 @@ function ephemeris = propagate(propagator, utc)
 fprintf('   Calculating ephemeris...\n')
 currentTime = getCurrentTime(utc);
 
-propagator.propagate(currentTime.shiftedBy(simulation_parameters.ephStart * 3600));
-propagator.propagate(currentTime.shiftedBy(simulation_parameters.ephEnd * 3600));
+startTime = currentTime.shiftedBy(simulation_parameters.ephStart * 3600);
+endTime = currentTime.shiftedBy(simulation_parameters.ephEnd * 3600);
 
+fprintf('     Propagating to start time %s...\n', char(startTime));
+propagator.propagate(startTime);
+fprintf('     Propagating to end time %s...\n', char(endTime));
+propagator.propagate(endTime);
+
+fprintf('     Done!\n');
 ephemeris = propagator.getGeneratedEphemeris();
 
 end

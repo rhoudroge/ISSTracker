@@ -31,11 +31,11 @@ idx = [0,find(myDif > 250),length(lons)];
 % draw ground trace
 %  avoid a line from 180° to -180°
 for k=2:length(idx)
-    plot(lons(idx(k-1)+1:idx(k)), lats(idx(k-1)+1:idx(k)), 'y','LineSmoothing','on');
+    plot(lons(idx(k-1)+1:idx(k)), lats(idx(k-1)+1:idx(k)), 'y');
 end
 
 %  arrow on actual ISS position
-handles.myISS2D = plot(lons(id), lats(id), 'r+','LineWidth', 2,'LineSmoothing','on');
+handles.myISS2D = plot(lons(id), lats(id), 'r+','LineWidth', 2);
 
 % footprint - r already normalized
 beta = acos(1 / r);

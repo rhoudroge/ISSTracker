@@ -10,16 +10,14 @@
 classdef simulation_parameters
     properties (Constant)
         % Nasa ephemeris
-        useSavedFile = true;
+        useSavedFile = false;
         savedFileName = 'nasa_feed_20151014.txt';
-        url = 'http://spaceflight.nasa.gov/realdata/sightings/SSapplications/Post/JavaSSOP/orbit/ISS/SVPOST.html';
-        
+        url = 'https://spaceflight.nasa.gov/realdata/sightings/SSapplications/Post/JavaSSOP/orbit/ISS/SVPOST.html';
+                
         % Use real time or simulated time (UTC)
         simulatedTime = true;
-        simulationStart = [2015 10 15 17 12 10];
-        
-        % speed factor, to speed up time
-        speedFactor = 10;
+        simulationStart = [2019 5 15 21 48 10];
+        speedFactor = 1;
         
         % In case we use real time, we can shift the date (in hours)
         timeShift = 0;

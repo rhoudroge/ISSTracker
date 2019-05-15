@@ -43,13 +43,13 @@ if simulation_parameters.renderEarth
     handles.myEarth = surf(handles.ellipsoid.X, handles.ellipsoid.Y,...
         handles.ellipsoid.Z, 'Facecolor','texturemap',...
         'CData', newCdata, 'Edgecolor','none',...
-        'FaceLighting','phong','LineSmoothing','on');
+        'FaceLighting','phong');
     
     
 else
     % draw coastline only
     p1 = mesh(handles.ellipsoid.X, handles.ellipsoid.Y,...
-        handles.ellipsoid.Z,'LineSmoothing','on');
+        handles.ellipsoid.Z);
     set(p1,'tag','earth','facecolor',[0 0 1],'edgecolor',[.3 .3 1]);
     
     data = load(fullfile('data','coastline'));
@@ -72,9 +72,9 @@ axis equal
 axis off
 
 % Plot EME2000 frame axes
-h1 = plot3([0 1.5],[0 0],[0 0],'r-','LineSmoothing','on');
-h2 = plot3([0 0],[0 1.5],[0 0],'g-','LineSmoothing','on');
-h3 = plot3([0 0],[0 0],[0 1.5],'b-','LineSmoothing','on');
+h1 = plot3([0 1.5],[0 0],[0 0],'r-');
+h2 = plot3([0 0],[0 1.5],[0 0],'g-');
+h3 = plot3([0 0],[0 0],[0 1.5],'b-');
 set([h1 h2 h3],'linewidth',4);
 
 s = .05;
@@ -90,7 +90,7 @@ for i=1:6
     set(handles.cube(i),'edgecolor','k')
 end
 
-handles.orbit = plot3(x, y, z, 'y', 'LineWidth',1,'LineSmoothing','on');
+handles.orbit = plot3(x, y, z, 'y', 'LineWidth',1);
 
 % TODO create 3D footprint
 x = x(id);

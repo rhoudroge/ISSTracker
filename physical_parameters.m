@@ -14,12 +14,12 @@ classdef physical_parameters
         
         % degree and order of earth potential
         potentialFlag = true;
-        degree = 10;
-        order = 10;
+        degree = 2;
+        order = 2;
         
         % third bodies
-        sunAttraction = true;
-        moonAttraction = true;
+        sunAttraction = false;
+        moonAttraction = false;
         innerBodies = false;
         outerBodies = false;
         
