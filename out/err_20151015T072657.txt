@@ -1,0 +1,58 @@
+Deviations generated 2015-10-15T07:26:57.363 UTC
+
+Run #1 : 11.48 s
+Orbit bulletin dated 2015-10-14T12:00:00.000 UTC
+Errors after 24h : 4.791094e+03 m and 5.427863e+00 m/s
+
+Run #2 : 11.31 s
+Orbit bulletin dated 2015-10-15T12:00:00.000 UTC
+Errors after 24h : 4.483535e+03 m and 5.056108e+00 m/s
+
+Run #3 : 11.29 s
+Orbit bulletin dated 2015-10-16T12:00:00.000 UTC
+Errors after 24h : 2.468211e+03 m and 2.811313e+00 m/s
+
+Run #4 : 11.10 s
+Orbit bulletin dated 2015-10-17T12:00:00.000 UTC
+Errors after 24h : 3.755749e+03 m and 4.269950e+00 m/s
+
+Run #5 : 11.52 s
+Orbit bulletin dated 2015-10-18T12:00:00.000 UTC
+Errors after 24h : 3.705355e+03 m and 4.204375e+00 m/s
+
+Run #6 : 11.53 s
+Orbit bulletin dated 2015-10-19T12:00:00.000 UTC
+Errors after 24h : 4.018290e+03 m and 4.587161e+00 m/s
+
+Run #7 : 12.49 s
+Orbit bulletin dated 2015-10-20T12:00:00.000 UTC
+Errors after 24h : 3.852637e+03 m and 4.355289e+00 m/s
+
+Run #8 : 11.69 s
+Orbit bulletin dated 2015-10-21T12:00:00.000 UTC
+Errors after 24h : 2.937387e+03 m and 3.373111e+00 m/s
+
+Run #9 : 13.37 s
+Orbit bulletin dated 2015-10-22T12:00:00.000 UTC
+Errors after 24h : 3.807052e+03 m and 4.287125e+00 m/s
+
+Run #10 : 11.27 s
+Orbit bulletin dated 2015-10-23T12:00:00.000 UTC
+Errors after 24h : 2.851389e+03 m and 3.231982e+00 m/s
+
+Run #11 : 11.37 s
+Orbit bulletin dated 2015-10-24T12:00:00.000 UTC
+Errors after 24h : 4.270144e+03 m and 4.809334e+00 m/s
+
+Run #12 : 12.65 s
+Orbit bulletin dated 2015-10-25T12:00:00.000 UTC
+Errors after 24h : 2.377205e+03 m and 2.695708e+00 m/s
+
+Run #13 : 13.61 s
+Orbit bulletin dated 2015-10-26T12:00:00.000 UTC
+Errors after 24h : 4.551849e+03 m and 5.139745e+00 m/s
+
+Run #14 : 11.76 s
+Orbit bulletin dated 2015-10-27T12:00:00.000 UTC
+Errors after 24h : 3.268625e+03 m and 3.691313e+00 m/s
+
