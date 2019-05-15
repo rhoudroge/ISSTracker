@@ -10,8 +10,8 @@
 classdef simulation_parameters
     properties (Constant)
         % Nasa ephemeris
-        useSavedFile = false;
-        savedFileName = 'nasa_feed_20151014.txt';
+        useSavedFile = true;
+        savedFileName = 'nasa_feed_20190515.txt';
         url = 'https://spaceflight.nasa.gov/realdata/sightings/SSapplications/Post/JavaSSOP/orbit/ISS/SVPOST.html';
                 
         % Use real time or simulated time (UTC)
