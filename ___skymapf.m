@@ -117,7 +117,7 @@ for iii = 1:length(seconds)
     mm   = ttime.getMinute
     ss   = ttime.getSecond
     
-    
+    % https://de.mathworks.com/matlabcentral/fileexchange/45673-sky-map-function
     %-----------------------------------------------------------------
     % GREENWICH MEAN SIDEREAL TIME
     %-----------------------------------------------------------------
